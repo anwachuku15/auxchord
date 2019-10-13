@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- ADD NAVBAR LOGIN FORM LATER -->
+<h2>Everybody has the AUX cord.</h2>
+<h4>What song should play next?</h4>
+<a href="{% url 'accounts:signup' %}" role="button" class="btn btn-primary">Sign Up</a>
+<a href="{% url 'accounts:login' %}" role="button" class="btn btn-outline-primary">Log In</a>
+{% endblock %}

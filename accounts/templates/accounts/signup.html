@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+
+<h2>AUXchord</h2>
+<hr>
+<h3>Sign Up</h3>
+<form method="POST" class="form">
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  {% buttons %}
+  <input type="submit" class="btn btn-primary" value="Sign Up">
+  {% endbuttons %}
+</form>
+
+{% endblock %}
